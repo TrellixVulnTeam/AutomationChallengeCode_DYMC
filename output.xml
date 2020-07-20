@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200720 23:05:58.494" rpa="false">
+<suite id="s1" name="Testing" source="D:\AutomationChallengeCode\TestCases\testing.robot">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com/index.php?controller=authentication&amp;back=my-account</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200720 23:05:58.699" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php?controller=authentication&amp;back=my-account'.</msg>
+<status status="PASS" starttime="20200720 23:05:58.699" endtime="20200720 23:06:06.436"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:email</arg>
+<arg>test@test1111.com</arg>
+</arguments>
+<msg timestamp="20200720 23:06:06.437" level="INFO">Typing text 'test@test1111.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200720 23:06:06.437" endtime="20200720 23:06:06.614"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20200720 23:06:06.614" endtime="20200720 23:06:06.615"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:passwd</arg>
+<arg>12582222222222</arg>
+</arguments>
+<msg timestamp="20200720 23:06:06.615" level="INFO">Typing text '12582222222222' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20200720 23:06:06.615" endtime="20200720 23:06:12.830"></status>
+</kw>
+<status status="PASS" starttime="20200720 23:05:58.698" endtime="20200720 23:06:12.832" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200720 23:05:58.495" endtime="20200720 23:06:12.837"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Testing">Testing</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
