@@ -2,14 +2,19 @@
 Library     SeleniumLibrary
 Variables   ../PageElements/PageElements.py
 
+
+*** Variables ***
+${Title}  My Store
+
+
 *** Keywords ***
 # Login keywords
-# The following keywords are self explanatory
 
 Open Site Browser
     [Arguments]     ${SiteUrl}      ${Browser}
     open browser    ${SiteUrl}      ${Browser}
     maximize browser window
+    Verify Page Title   ${Title}
 
 Click Sigin Link
     click link      ${Signin_Link}
@@ -29,10 +34,6 @@ Verify Page Title
     [Arguments]     ${Page_Title}
     title should be     ${Page_Title}
 
-Verify Login Is Successfull
-    [Arguments]     ${Title_Is}
-    title should be     ${Title_Is}
-
 Verify Page Contains
     [Arguments]     ${Should_Contain}
     page should contain    ${Should_Contain}
@@ -42,3 +43,12 @@ Close Single Browser
 
 Close All Browsers Completely
     close all browsers
+
+# Validation Messages
+Verify Login Is Successfull
+    [Arguments]     ${Title_Is}
+    title should be     ${Title_Is}
+
+Visible Sigin Error Message
+    [Arguments]     ${Error_Message}
+    page should contain     ${Error_Message}

@@ -1,0 +1,10 @@
+${Email},${Password}
+test_automation_2020@test.com,${EMPTY}
+test_automation_2020@test.com,malta1
+${EMPTY},malta
+${EMPTY},${EMPTY}
+${EMPTY},malta1
+test001_automation_2020@test.com,malta
+test001_automation_2020@test.com,${EMPTY}
+test001_automation_2020@test.com,malta1
+

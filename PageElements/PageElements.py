@@ -2,7 +2,6 @@
 
 UserEmailAddress = "name:email"
 UserPassword = "name:passwd"
-# UserPassword = "xpath://input[@id='passwd']"
 Signin_Link = "xpath://a[@class='login']"
 Signin_Button = "id:SubmitLogin"
 
