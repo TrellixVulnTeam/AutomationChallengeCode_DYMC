@@ -2,30 +2,32 @@
 Library     SeleniumLibrary
 Resource    ../Resources/LoginKeywords.robot
 Library     DataDriver
-...     file=D:/AutomationChallengeCode/TestData/InValidLoginCredentials.xlsx
+...     file=D:/AutomationChallengeCode/TestData/ValidLoginCredentials.xlsx
 ...     dialect=excel
+...     sheet_name=TestData001
 
-Suite Setup     Open Site Browser   ${url}  ${browser}  ${Title}
+Suite Setup     Open Site Browser   ${SiteUrl}  ${Browser}  ${Title}
 Suite Teardown      Close All Browsers Completely
-Test Template       Invalid Login
+Test Template      Valid Login
 
 *** Variables ***
-${url}      http://automationpractice.com/
-${browser}  chrome
+${Browser}      chrome
+${SiteUrl}      http://automationpractice.com/
 ${Title}  My Store
 ${LoginPageTitle}   Login - My Store
-${Error Message}    There is 1 error
+${PageContains}        Welcome to your account
+${UserHomePageTitle}     My account - My Store
 
 # Assuming user already registered and have the following details
-# Email = test_automation_2020@test.com
-# password =     malta
+# ${The_User_Email}    test_automation_2020@test.com
+# ${The_User_Password}     malta
 
 *** Test Cases ***
 Login user with email as ${Email} and password as ${Password}
 
 
 *** Keywords ***
-Invalid Login
+Valid Login
     [Arguments]     ${Email}     ${Password}
     set selenium speed  1
     Click Sigin Link
@@ -33,12 +35,6 @@ Invalid Login
     Enter UserEmail  ${Email}
     Enter UserPassword  ${Password}
     Click Signin Button
-    visible sigin error message     ${Error Message}
-
-# installed robotframework-datadriver - could not be installed
-# installed robotframework-exceldatadriver
-# pip install -U robotframework-datadriver[XLS]
-# pip install xlrd - needed in order to use excel for the data
-
-
+    Verify Login Is Successfull     ${UserHomePageTitle}
+    verify page contains        ${PageContains}
 

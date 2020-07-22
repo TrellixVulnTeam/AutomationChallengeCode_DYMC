@@ -4,17 +4,17 @@ Variables   ../PageElements/PageElements.py
 
 
 *** Variables ***
-${Title}  My Store
+
 
 
 *** Keywords ***
 # Login keywords
 
 Open Site Browser
-    [Arguments]     ${SiteUrl}      ${Browser}
+    [Arguments]     ${SiteUrl}      ${Browser}      ${Title}
     open browser    ${SiteUrl}      ${Browser}
     maximize browser window
-    Verify Page Title   ${Title}
+    Title Should be   ${Title}
 
 Click Sigin Link
     click link      ${Signin_Link}
@@ -28,15 +28,15 @@ Enter UserPassword
     input text      ${UserPassword}     ${Password}
 
 Click Signin Button
-    click button    ${Signin_Button}
+    click button    ${SigninButton}
 
 Verify Page Title
-    [Arguments]     ${Page_Title}
-    title should be     ${Page_Title}
+    [Arguments]     ${PageTitle}
+    title should be     ${PageTitle}
 
 Verify Page Contains
-    [Arguments]     ${Should_Contain}
-    page should contain    ${Should_Contain}
+    [Arguments]     ${ShouldContain}
+    page should contain    ${ShouldContain}
 
 Close Single Browser
     close browser
@@ -46,9 +46,9 @@ Close All Browsers Completely
 
 # Validation Messages
 Verify Login Is Successfull
-    [Arguments]     ${Title_Is}
-    title should be     ${Title_Is}
+    [Arguments]     ${TitleIs}
+    title should be     ${TitleIs}
 
 Visible Sigin Error Message
-    [Arguments]     ${Error_Message}
-    page should contain     ${Error_Message}
+    [Arguments]     ${ErrorMessage}
+    page should contain     ${ErrorMessage}
