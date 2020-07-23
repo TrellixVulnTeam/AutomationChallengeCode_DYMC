@@ -3,10 +3,6 @@ Library     SeleniumLibrary
 Variables   ../PageElements/PageElements.py
 
 
-*** Variables ***
-
-
-
 *** Keywords ***
 # Login keywords
 

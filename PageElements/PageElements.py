@@ -1,10 +1,9 @@
-# Login Page Elements and Locators
-
+# Login Page Elements
 UserEmailAddress = "name:email"
 UserPassword = "name:passwd"
 Signin_Link = "xpath://a[@class='login']"
 Signin_Button = "id:SubmitLogin"
 
-# Assuming that client already register with and have the following
-# email as test@test.com
-# password as malta123
+# Shopping Page Elements
+InputSearchBox = "name:search_query"
+ClickSearchButton = "name:submit_search"
