@@ -1,26 +1,28 @@
 *** Settings ***
 Library   SeleniumLibrary
+Resource    ../Resources/ShoppingKeywords.robot
 Resource    ../Resources/LoginKeywords.robot
+Resource    ../Variables/Variables.robot
 
-# Suite Setup     Open Site Browser   ${SiteUrl}  ${Browser}  ${Title}
-# Suite Teardown      Close All Browsers Completely
-# Test Template      Valid Login
-
-*** Variables ***
-${Browser}      chrome
-${SiteUrl}      http://automationpractice.com/
-${Title}  My Store
+Suite Setup     Open Site Browser   ${SiteUrl.lg}  ${Browser}  ${Title}
+Suite Teardown      Close All Browsers Completely
 
 *** Test Cases ***
 Shopping Cart Test
-    open browser    ${SiteUrl}  ${Browser}
-    maximize browser window
-    input text  name:search_query   black dress
-    click button    name:submit_search
-    sleep   0
-#   ${items}=    Get Element Count  class:button ajax_add_to_cart_button btn btn-default
-#   log to console      Element count is ${items}
-#   select from list by label
-    click button   xpath://li[1]//div[1]//div[1]//div[1]//a[2]//span[1]
-    click button    name:Submit
-    sleep   20
+    Shopping Cart
+
+*** Keywords ***
+Shopping Cart
+    set selenium speed  1
+    Search for black dress
+    Add the first dress
+    Add the second dress
+    Proceed to checkout Items
+    Change quantity of second dress
+    Remove the frist dress
+    Proceed to checkout
+# challenges met include not element not interactable due to the fact that
+# I did not involve time to wait until element is in view
+
+
+
