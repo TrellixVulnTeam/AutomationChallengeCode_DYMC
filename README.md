@@ -33,3 +33,5 @@
 		# To run single test file -> robot testcases\invalidlogintest.robot
 		# To run single test file -> robot testcases\validlogintest.robot
 		# To run single test file -> robot testcases\shoppingcarttest.robot
+
+# See the Documentation folder for assumption take in respect of the testcases

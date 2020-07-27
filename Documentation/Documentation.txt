@@ -1,0 +1,9 @@
+# The layout for this automation framework is based on Page Object Model (POM)
+
+# For the login and invalid login test, the following assumption were made
+	# A user already registered with the site and obtained the following credentials
+	# User email : test_automation_2020@test.com
+	# User password : malta
+
+# Note:
+	#Test data are provided in the testdata folder directory
