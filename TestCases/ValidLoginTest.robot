@@ -3,6 +3,7 @@ Library     SeleniumLibrary
 Resource    ../Resources/LoginKeywords.robot
 Resource    ../PageObject/LoginPageObject.robot
 Resource    ../Variables/Variables.robot
+Resource    ../Resources/Generalkeywords.robot
 Library     DataDriver
 ...     file=D:/AutomationChallengeCode/TestData/ValidLoginCredentials.xlsx
 ...     dialect=excel

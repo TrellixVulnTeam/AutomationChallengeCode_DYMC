@@ -3,7 +3,7 @@ Library     SeleniumLibrary
 
 
 *** Variables ***
-# General Variables
+# General Variables or Strings
 # Using dictionary to store the site url
 &{Siteurl}                  lg=http://automationpractice.com/
 ${browser}                  chrome

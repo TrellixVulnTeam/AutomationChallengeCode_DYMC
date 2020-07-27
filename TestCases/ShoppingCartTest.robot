@@ -3,8 +3,9 @@ Library   SeleniumLibrary
 Resource    ../Resources/ShoppingKeywords.robot
 Resource    ../Resources/LoginKeywords.robot
 Resource    ../Variables/Variables.robot
+Resource    ../Resources/Generalkeywords.robot
 
-Suite Setup     Open Site Browser   ${SiteUrl.lg}  ${Browser}  ${Title}
+Suite Setup         Open Site Browser   ${SiteUrl.lg}  ${Browser}  ${Title}
 Suite Teardown      Close All Browsers Completely
 
 *** Test Cases ***
@@ -15,14 +16,12 @@ Shopping Cart Test
 Shopping Cart
     set selenium speed  1
     Search for black dress
-    Add the first dress
-    Add the second dress
+    Add an item
+    Add another item
     Proceed to checkout Items
-    Change quantity of second dress
-    Remove the frist dress
+    Change quantity of an item
+    Remove an item
     Proceed to checkout
-# challenges met include not element not interactable due to the fact that
-# I did not involve time to wait until element is in view
 
 
 

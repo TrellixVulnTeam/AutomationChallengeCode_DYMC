@@ -4,12 +4,6 @@ Variables   ../PageElements/PageElements.py
 
 *** Keywords ***
 # Login keywords
-Open Site Browser
-    [Arguments]                 ${SiteUrl}      ${Browser}      ${Title}
-    open browser                ${SiteUrl}      ${Browser}
-    maximize browser window
-    Title Should be             ${Title}
-
 Click Sigin Link
     click link                  ${Signin_Link}
 
@@ -31,12 +25,6 @@ Verify Page Title
 Verify Page Contains
     [Arguments]                 ${ShouldContain}
     page should contain         ${ShouldContain}
-
-Close Single Browser
-    close browser
-
-Close All Browsers Completely
-    close all browsers
 
 # Validation Messages
 Verify Login Is Successfull
