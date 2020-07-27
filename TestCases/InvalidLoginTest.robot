@@ -28,10 +28,12 @@ Invalid Login
     Login Details Object            ${Email}    ${Password}     ${LoginPageTitle}
     visible sigin error message     ${Error Message}
 
-# installed robotframework-datadriver - could not be installed
-# installed robotframework-exceldatadriver
+
+# pip install robotframework-exceldatadriver
 # pip install -U robotframework-datadriver[XLS]
 # pip install xlrd - needed in order to use excel for the data
+# pip install numpy
+# pip install pandas
 
 
 
