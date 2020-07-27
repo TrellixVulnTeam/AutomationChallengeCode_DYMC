@@ -6,4 +6,11 @@
 	# User password : malta
 
 # Note:
-	#Test data are provided in the testdata folder directory
+	# Test data are provided in the testdata folder directory
+	
+# Difficulty encountered
+	# Challenges met include element not interactable which is due to the fact that
+	# I did not call the keyword wait until element is visilbe.
+	# This could also be due to the fact that the internet was very slow where I am holidaying
+	# ... therefore, there was a time out of after 5 seconds if the element is not visible
+	# I used implicit wait of 20 seconds because the internet at the area where I am holidaying is slow
