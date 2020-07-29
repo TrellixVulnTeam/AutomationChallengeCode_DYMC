@@ -5,7 +5,7 @@
 	
 
 # Installation
-	# Download and install python for the appropriate OS (appropriate system)from https://www.python.org/downloads
+	# Download and install python (version used 3.8.3) for the appropriate OS (appropriate system)from https://www.python.org/downloads
 	# Locate the python folder and configure the path in the python script folder and add to environment variables
 	# Note that pip package manager comes bundled with python installation
 	
