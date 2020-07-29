@@ -17,8 +17,8 @@
 	# Through the command prompt, install -> pip install robotframework-exceldatadriver
 	# Through the command prompt, install -> pip install -U robotframework-datadriver[XLS]
 	# Through the command prompt, install -> pip install xlrd - needed in order to use excel for the data
-	# Through the command prompt, install (needed dependcy for excel file) -> pip install numpy
-	# Through the command prompt, install (needed dependcy for excel file) -> pip install pandas
+	# Through the command prompt, install (needed dependency for excel file) -> pip install numpy
+	# Through the command prompt, install (needed dependency for excel file) -> pip install pandas
 	# This is only needed if using Pycharm IDE to install the libraries above from line 17 - 21 in Pycharm IDE
 		# Open the project in Pycharm IDE
 		# Highlight the project directory (AutomationChallengeCode)
