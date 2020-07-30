@@ -56,5 +56,6 @@
 		# To run validlogintest file -> robot testcases\validlogintest.robot
 		# To run shoppingcarttest file -> robot testcases\shoppingcarttest.robot
 		# If using pycharm IDE, the above command will also work in the pycharm terminal window
-
-# See the Documentation folder for assumption taken in respect of the testcases
+		
+# Documentation
+	# See the Documentation folder for assumption taken in respect of the testcases
