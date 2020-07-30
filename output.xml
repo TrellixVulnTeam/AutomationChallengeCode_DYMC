@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200730 11:59:46.914" rpa="false">
-<suite id="s1" name="Testcases" source="D:\AutomationChallengeCode\testcases">
-<suite id="s1-s1" name="InvalidLoginTest" source="D:\AutomationChallengeCode\testcases\InvalidLoginTest.robot">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200730 22:37:58.919" rpa="false">
+<suite id="s1" name="Invalidlogintest" source="D:\AutomationChallengeCode\testcases\invalidlogintest.robot">
 <kw name="Open Site Browser" library="Generalkeywords" type="setup">
 <arguments>
 <arg>${Siteurl.lg}</arg>
@@ -14,24 +13,24 @@
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20200730 11:59:49.512" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20200730 11:59:49.512" endtime="20200730 11:59:56.533"></status>
+<msg timestamp="20200730 22:37:59.494" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20200730 22:37:59.494" endtime="20200730 22:38:06.364"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200730 11:59:56.533" endtime="20200730 11:59:58.667"></status>
+<status status="PASS" starttime="20200730 22:38:06.364" endtime="20200730 22:38:08.490"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>${Title}</arg>
 </arguments>
-<msg timestamp="20200730 11:59:58.674" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200730 11:59:58.667" endtime="20200730 11:59:58.674"></status>
+<msg timestamp="20200730 22:38:08.494" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20200730 22:38:08.490" endtime="20200730 22:38:08.494"></status>
 </kw>
-<status status="PASS" starttime="20200730 11:59:49.511" endtime="20200730 11:59:58.674"></status>
+<status status="PASS" starttime="20200730 22:37:59.493" endtime="20200730 22:38:08.494"></status>
 </kw>
-<test id="s1-s1-t1" name="Login user with email as test_automation_2020@test.com and password as ">
+<test id="s1-t1" name="Login user with email as test_automation_2020@test.com and password as ">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -49,7 +48,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 11:59:58.676" endtime="20200730 11:59:58.676"></status>
+<status status="PASS" starttime="20200730 22:38:08.497" endtime="20200730 22:38:08.497"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -57,10 +56,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 11:59:58.676" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 11:59:58.676" endtime="20200730 12:00:03.612"></status>
+<msg timestamp="20200730 22:38:08.497" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:38:08.497" endtime="20200730 22:38:13.236"></status>
 </kw>
-<status status="PASS" starttime="20200730 11:59:58.676" endtime="20200730 12:00:03.612"></status>
+<status status="PASS" starttime="20200730 22:38:08.497" endtime="20200730 22:38:13.236"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -71,18 +70,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:04.619" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:00:03.613" endtime="20200730 12:00:04.619"></status>
+<msg timestamp="20200730 22:38:14.245" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:38:13.237" endtime="20200730 22:38:14.245"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:03.612" endtime="20200730 12:00:04.620"></status>
+<status status="PASS" starttime="20200730 22:38:13.236" endtime="20200730 22:38:14.246"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:00:07.622" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:00:04.620" endtime="20200730 12:00:07.622"></status>
+<msg timestamp="20200730 22:38:17.247" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:38:14.246" endtime="20200730 22:38:17.247"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -94,10 +93,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:07.625" level="INFO">Typing text 'test_automation_2020@test.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:00:07.624" endtime="20200730 12:00:10.793"></status>
+<msg timestamp="20200730 22:38:17.250" level="INFO">Typing text 'test_automation_2020@test.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:38:17.249" endtime="20200730 22:38:20.440"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:07.623" endtime="20200730 12:00:10.793"></status>
+<status status="PASS" starttime="20200730 22:38:17.248" endtime="20200730 22:38:20.441"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -109,10 +108,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:10.794" level="INFO">Typing text '' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:00:10.793" endtime="20200730 12:00:13.908"></status>
+<msg timestamp="20200730 22:38:20.444" level="INFO">Typing text '' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:38:20.443" endtime="20200730 22:38:23.569"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:10.793" endtime="20200730 12:00:13.909"></status>
+<status status="PASS" starttime="20200730 22:38:20.441" endtime="20200730 22:38:23.570"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -120,12 +119,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:13.911" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:00:13.910" endtime="20200730 12:00:19.974"></status>
+<msg timestamp="20200730 22:38:23.574" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:38:23.573" endtime="20200730 22:38:29.603"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:13.909" endtime="20200730 12:00:19.975"></status>
+<status status="PASS" starttime="20200730 22:38:23.570" endtime="20200730 22:38:29.603"></status>
 </kw>
-<status status="PASS" starttime="20200730 11:59:58.675" endtime="20200730 12:00:19.975"></status>
+<status status="PASS" starttime="20200730 22:38:08.496" endtime="20200730 22:38:29.603"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -136,24 +135,24 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:22.004" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:00:19.977" endtime="20200730 12:00:22.004"></status>
+<msg timestamp="20200730 22:38:31.620" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:38:29.604" endtime="20200730 22:38:31.620"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:19.976" endtime="20200730 12:00:22.005"></status>
+<status status="PASS" starttime="20200730 22:38:29.603" endtime="20200730 22:38:31.621"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:00:32.008" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:00:22.005" endtime="20200730 12:00:32.008"></status>
+<msg timestamp="20200730 22:38:41.623" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:38:31.622" endtime="20200730 22:38:41.623"></status>
 </kw>
-<status status="PASS" starttime="20200730 11:59:58.675" endtime="20200730 12:00:32.009"></status>
+<status status="PASS" starttime="20200730 22:38:08.496" endtime="20200730 22:38:41.623"></status>
 </kw>
-<status status="PASS" starttime="20200730 11:59:58.674" endtime="20200730 12:00:32.010" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:38:08.495" endtime="20200730 22:38:41.625" critical="yes"></status>
 </test>
-<test id="s1-s1-t2" name="Login user with email as test_automation_2020@test.com and password as malta1">
+<test id="s1-t2" name="Login user with email as test_automation_2020@test.com and password as malta1">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -171,7 +170,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 12:00:32.018" endtime="20200730 12:00:32.018"></status>
+<status status="PASS" starttime="20200730 22:38:41.637" endtime="20200730 22:38:41.638"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -179,10 +178,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:32.020" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:00:32.019" endtime="20200730 12:00:36.700"></status>
+<msg timestamp="20200730 22:38:41.640" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:38:41.639" endtime="20200730 22:38:46.179"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:32.018" endtime="20200730 12:00:36.700"></status>
+<status status="PASS" starttime="20200730 22:38:41.638" endtime="20200730 22:38:46.180"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -193,18 +192,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:37.709" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:00:36.701" endtime="20200730 12:00:37.709"></status>
+<msg timestamp="20200730 22:38:47.190" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:38:46.182" endtime="20200730 22:38:47.190"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:36.700" endtime="20200730 12:00:37.710"></status>
+<status status="PASS" starttime="20200730 22:38:46.180" endtime="20200730 22:38:47.191"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:00:40.713" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:00:37.710" endtime="20200730 12:00:40.713"></status>
+<msg timestamp="20200730 22:38:50.192" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:38:47.191" endtime="20200730 22:38:50.192"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -216,10 +215,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:40.713" level="INFO">Typing text 'test_automation_2020@test.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:00:40.713" endtime="20200730 12:00:43.888"></status>
+<msg timestamp="20200730 22:38:50.195" level="INFO">Typing text 'test_automation_2020@test.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:38:50.194" endtime="20200730 22:38:53.373"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:40.713" endtime="20200730 12:00:43.889"></status>
+<status status="PASS" starttime="20200730 22:38:50.193" endtime="20200730 22:38:53.374"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -231,10 +230,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:43.891" level="INFO">Typing text 'malta1' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:00:43.891" endtime="20200730 12:00:46.985"></status>
+<msg timestamp="20200730 22:38:53.378" level="INFO">Typing text 'malta1' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:38:53.376" endtime="20200730 22:38:56.521"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:43.889" endtime="20200730 12:00:46.985"></status>
+<status status="PASS" starttime="20200730 22:38:53.374" endtime="20200730 22:38:56.521"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -242,12 +241,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:46.986" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:00:46.986" endtime="20200730 12:00:53.019"></status>
+<msg timestamp="20200730 22:38:56.521" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:38:56.521" endtime="20200730 22:39:03.019"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:46.985" endtime="20200730 12:00:53.019"></status>
+<status status="PASS" starttime="20200730 22:38:56.521" endtime="20200730 22:39:03.019"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:32.016" endtime="20200730 12:00:53.019"></status>
+<status status="PASS" starttime="20200730 22:38:41.635" endtime="20200730 22:39:03.020"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -258,24 +257,24 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:00:55.044" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:00:53.019" endtime="20200730 12:00:55.044"></status>
+<msg timestamp="20200730 22:39:05.054" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:39:03.021" endtime="20200730 22:39:05.054"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:53.019" endtime="20200730 12:00:55.044"></status>
+<status status="PASS" starttime="20200730 22:39:03.020" endtime="20200730 22:39:05.055"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:01:05.046" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:00:55.044" endtime="20200730 12:01:05.046"></status>
+<msg timestamp="20200730 22:39:15.057" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:39:05.055" endtime="20200730 22:39:15.057"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:32.015" endtime="20200730 12:01:05.046"></status>
+<status status="PASS" starttime="20200730 22:38:41.633" endtime="20200730 22:39:15.057"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:00:32.013" endtime="20200730 12:01:05.046" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:38:41.631" endtime="20200730 22:39:15.058" critical="yes"></status>
 </test>
-<test id="s1-s1-t3" name="Login user with email as  and password as malta">
+<test id="s1-t3" name="Login user with email as  and password as malta">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -293,7 +292,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 12:01:05.048" endtime="20200730 12:01:05.050"></status>
+<status status="PASS" starttime="20200730 22:39:15.063" endtime="20200730 22:39:15.064"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -301,10 +300,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:05.050" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:01:05.050" endtime="20200730 12:01:09.429"></status>
+<msg timestamp="20200730 22:39:15.065" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:39:15.065" endtime="20200730 22:39:20.307"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:05.050" endtime="20200730 12:01:09.430"></status>
+<status status="PASS" starttime="20200730 22:39:15.064" endtime="20200730 22:39:20.308"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -315,18 +314,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:10.447" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:01:09.431" endtime="20200730 12:01:10.447"></status>
+<msg timestamp="20200730 22:39:21.318" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:39:20.310" endtime="20200730 22:39:21.318"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:09.430" endtime="20200730 12:01:10.447"></status>
+<status status="PASS" starttime="20200730 22:39:20.308" endtime="20200730 22:39:21.319"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:01:13.448" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:01:10.447" endtime="20200730 12:01:13.448"></status>
+<msg timestamp="20200730 22:39:24.321" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:39:21.319" endtime="20200730 22:39:24.321"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -338,10 +337,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:13.451" level="INFO">Typing text '' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:01:13.450" endtime="20200730 12:01:16.541"></status>
+<msg timestamp="20200730 22:39:24.325" level="INFO">Typing text '' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:39:24.323" endtime="20200730 22:39:27.410"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:13.449" endtime="20200730 12:01:16.542"></status>
+<status status="PASS" starttime="20200730 22:39:24.322" endtime="20200730 22:39:27.410"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -353,10 +352,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:16.545" level="INFO">Typing text 'malta' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:01:16.544" endtime="20200730 12:01:19.680"></status>
+<msg timestamp="20200730 22:39:27.411" level="INFO">Typing text 'malta' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:39:27.411" endtime="20200730 22:39:30.578"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:16.542" endtime="20200730 12:01:19.680"></status>
+<status status="PASS" starttime="20200730 22:39:27.410" endtime="20200730 22:39:30.578"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -364,12 +363,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:19.681" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:01:19.680" endtime="20200730 12:01:26.941"></status>
+<msg timestamp="20200730 22:39:30.580" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:39:30.579" endtime="20200730 22:39:36.669"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:19.680" endtime="20200730 12:01:26.942"></status>
+<status status="PASS" starttime="20200730 22:39:30.578" endtime="20200730 22:39:36.670"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:05.048" endtime="20200730 12:01:26.942"></status>
+<status status="PASS" starttime="20200730 22:39:15.062" endtime="20200730 22:39:36.670"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -380,24 +379,24 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:28.969" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:01:26.944" endtime="20200730 12:01:28.969"></status>
+<msg timestamp="20200730 22:39:38.695" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:39:36.672" endtime="20200730 22:39:38.695"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:26.943" endtime="20200730 12:01:28.970"></status>
+<status status="PASS" starttime="20200730 22:39:36.671" endtime="20200730 22:39:38.696"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:01:38.972" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:01:28.970" endtime="20200730 12:01:38.972"></status>
+<msg timestamp="20200730 22:39:48.699" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:39:38.697" endtime="20200730 22:39:48.699"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:05.048" endtime="20200730 12:01:38.972"></status>
+<status status="PASS" starttime="20200730 22:39:15.062" endtime="20200730 22:39:48.699"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:05.048" endtime="20200730 12:01:38.974" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:39:15.060" endtime="20200730 22:39:48.700" critical="yes"></status>
 </test>
-<test id="s1-s1-t4" name="Login user with email as  and password as ">
+<test id="s1-t4" name="Login user with email as  and password as ">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -415,7 +414,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 12:01:38.981" endtime="20200730 12:01:38.982"></status>
+<status status="PASS" starttime="20200730 22:39:48.703" endtime="20200730 22:39:48.703"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -423,10 +422,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:38.983" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:01:38.983" endtime="20200730 12:01:43.457"></status>
+<msg timestamp="20200730 22:39:48.703" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:39:48.703" endtime="20200730 22:39:53.277"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:38.982" endtime="20200730 12:01:43.458"></status>
+<status status="PASS" starttime="20200730 22:39:48.703" endtime="20200730 22:39:53.277"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -437,18 +436,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:44.465" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:01:43.459" endtime="20200730 12:01:44.465"></status>
+<msg timestamp="20200730 22:39:54.286" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:39:53.278" endtime="20200730 22:39:54.286"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:43.458" endtime="20200730 12:01:44.466"></status>
+<status status="PASS" starttime="20200730 22:39:53.277" endtime="20200730 22:39:54.287"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:01:47.467" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:01:44.466" endtime="20200730 12:01:47.467"></status>
+<msg timestamp="20200730 22:39:57.288" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:39:54.287" endtime="20200730 22:39:57.288"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -460,10 +459,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:47.470" level="INFO">Typing text '' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:01:47.469" endtime="20200730 12:01:50.565"></status>
+<msg timestamp="20200730 22:39:57.291" level="INFO">Typing text '' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:39:57.290" endtime="20200730 22:40:00.393"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:47.468" endtime="20200730 12:01:50.566"></status>
+<status status="PASS" starttime="20200730 22:39:57.289" endtime="20200730 22:40:00.394"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -475,10 +474,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:50.569" level="INFO">Typing text '' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:01:50.568" endtime="20200730 12:01:53.689"></status>
+<msg timestamp="20200730 22:40:00.397" level="INFO">Typing text '' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:40:00.396" endtime="20200730 22:40:03.521"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:50.566" endtime="20200730 12:01:53.690"></status>
+<status status="PASS" starttime="20200730 22:40:00.394" endtime="20200730 22:40:03.522"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -486,12 +485,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:01:53.692" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:01:53.691" endtime="20200730 12:01:59.811"></status>
+<msg timestamp="20200730 22:40:03.524" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:40:03.523" endtime="20200730 22:40:09.519"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:53.690" endtime="20200730 12:01:59.811"></status>
+<status status="PASS" starttime="20200730 22:40:03.522" endtime="20200730 22:40:09.520"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:38.980" endtime="20200730 12:01:59.811"></status>
+<status status="PASS" starttime="20200730 22:39:48.702" endtime="20200730 22:40:09.520"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -502,24 +501,24 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:01.830" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:01:59.812" endtime="20200730 12:02:01.830"></status>
+<msg timestamp="20200730 22:40:11.554" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:40:09.522" endtime="20200730 22:40:11.554"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:59.811" endtime="20200730 12:02:01.830"></status>
+<status status="PASS" starttime="20200730 22:40:09.521" endtime="20200730 22:40:11.555"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:02:11.831" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:02:01.830" endtime="20200730 12:02:11.831"></status>
+<msg timestamp="20200730 22:40:21.557" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:40:11.555" endtime="20200730 22:40:21.557"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:38.978" endtime="20200730 12:02:11.832"></status>
+<status status="PASS" starttime="20200730 22:39:48.702" endtime="20200730 22:40:21.557"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:01:38.977" endtime="20200730 12:02:11.833" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:39:48.701" endtime="20200730 22:40:21.558" critical="yes"></status>
 </test>
-<test id="s1-s1-t5" name="Login user with email as  and password as malta2">
+<test id="s1-t5" name="Login user with email as  and password as malta2">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -537,7 +536,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 12:02:11.845" endtime="20200730 12:02:11.845"></status>
+<status status="PASS" starttime="20200730 22:40:21.561" endtime="20200730 22:40:21.561"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -545,10 +544,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:11.845" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:02:11.845" endtime="20200730 12:02:16.476"></status>
+<msg timestamp="20200730 22:40:21.562" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:40:21.562" endtime="20200730 22:40:26.572"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:11.845" endtime="20200730 12:02:16.477"></status>
+<status status="PASS" starttime="20200730 22:40:21.561" endtime="20200730 22:40:26.573"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -559,18 +558,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:17.494" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:02:16.478" endtime="20200730 12:02:17.494"></status>
+<msg timestamp="20200730 22:40:27.583" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:40:26.576" endtime="20200730 22:40:27.583"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:16.477" endtime="20200730 12:02:17.494"></status>
+<status status="PASS" starttime="20200730 22:40:26.573" endtime="20200730 22:40:27.584"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:02:20.495" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:02:17.494" endtime="20200730 12:02:20.495"></status>
+<msg timestamp="20200730 22:40:30.586" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:40:27.584" endtime="20200730 22:40:30.586"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -582,10 +581,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:20.496" level="INFO">Typing text '' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:02:20.496" endtime="20200730 12:02:23.597"></status>
+<msg timestamp="20200730 22:40:30.589" level="INFO">Typing text '' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:40:30.588" endtime="20200730 22:40:33.685"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:20.495" endtime="20200730 12:02:23.598"></status>
+<status status="PASS" starttime="20200730 22:40:30.587" endtime="20200730 22:40:33.686"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -597,10 +596,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:23.601" level="INFO">Typing text 'malta2' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:02:23.600" endtime="20200730 12:02:26.714"></status>
+<msg timestamp="20200730 22:40:33.689" level="INFO">Typing text 'malta2' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:40:33.688" endtime="20200730 22:40:36.824"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:23.598" endtime="20200730 12:02:26.715"></status>
+<status status="PASS" starttime="20200730 22:40:33.686" endtime="20200730 22:40:36.825"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -608,12 +607,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:26.717" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:02:26.716" endtime="20200730 12:02:33.201"></status>
+<msg timestamp="20200730 22:40:36.827" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:40:36.826" endtime="20200730 22:40:43.037"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:26.715" endtime="20200730 12:02:33.202"></status>
+<status status="PASS" starttime="20200730 22:40:36.825" endtime="20200730 22:40:43.037"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:11.843" endtime="20200730 12:02:33.202"></status>
+<status status="PASS" starttime="20200730 22:40:21.561" endtime="20200730 22:40:43.037"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -624,24 +623,24 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:35.225" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:02:33.204" endtime="20200730 12:02:35.225"></status>
+<msg timestamp="20200730 22:40:45.053" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:40:43.038" endtime="20200730 22:40:45.053"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:33.203" endtime="20200730 12:02:35.225"></status>
+<status status="PASS" starttime="20200730 22:40:43.037" endtime="20200730 22:40:45.053"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:02:45.225" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:02:35.225" endtime="20200730 12:02:45.225"></status>
+<msg timestamp="20200730 22:40:55.053" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:40:45.053" endtime="20200730 22:40:55.053"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:11.841" endtime="20200730 12:02:45.225"></status>
+<status status="PASS" starttime="20200730 22:40:21.560" endtime="20200730 22:40:55.054"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:11.838" endtime="20200730 12:02:45.226" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:40:21.559" endtime="20200730 22:40:55.056" critical="yes"></status>
 </test>
-<test id="s1-s1-t6" name="Login user with email as test001_automation_2020@test.com and password as malta">
+<test id="s1-t6" name="Login user with email as test001_automation_2020@test.com and password as malta">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -659,7 +658,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 12:02:45.230" endtime="20200730 12:02:45.231"></status>
+<status status="PASS" starttime="20200730 22:40:55.067" endtime="20200730 22:40:55.068"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -667,10 +666,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:45.232" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:02:45.231" endtime="20200730 12:02:50.101"></status>
+<msg timestamp="20200730 22:40:55.070" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:40:55.069" endtime="20200730 22:40:59.609"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:45.231" endtime="20200730 12:02:50.102"></status>
+<status status="PASS" starttime="20200730 22:40:55.069" endtime="20200730 22:40:59.610"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -681,18 +680,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:51.112" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:02:50.104" endtime="20200730 12:02:51.112"></status>
+<msg timestamp="20200730 22:41:00.618" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:40:59.612" endtime="20200730 22:41:00.618"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:50.102" endtime="20200730 12:02:51.112"></status>
+<status status="PASS" starttime="20200730 22:40:59.610" endtime="20200730 22:41:00.618"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:02:54.114" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:02:51.112" endtime="20200730 12:02:54.114"></status>
+<msg timestamp="20200730 22:41:03.619" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:41:00.618" endtime="20200730 22:41:03.619"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -704,10 +703,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:54.118" level="INFO">Typing text 'test001_automation_2020@test.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:02:54.117" endtime="20200730 12:02:57.289"></status>
+<msg timestamp="20200730 22:41:03.620" level="INFO">Typing text 'test001_automation_2020@test.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:41:03.620" endtime="20200730 22:41:06.795"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:54.115" endtime="20200730 12:02:57.289"></status>
+<status status="PASS" starttime="20200730 22:41:03.619" endtime="20200730 22:41:06.795"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -719,10 +718,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:02:57.290" level="INFO">Typing text 'malta' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:02:57.289" endtime="20200730 12:03:00.402"></status>
+<msg timestamp="20200730 22:41:06.796" level="INFO">Typing text 'malta' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:41:06.795" endtime="20200730 22:41:09.970"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:57.289" endtime="20200730 12:03:00.402"></status>
+<status status="PASS" starttime="20200730 22:41:06.795" endtime="20200730 22:41:09.971"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -730,12 +729,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:00.404" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:03:00.403" endtime="20200730 12:03:06.557"></status>
+<msg timestamp="20200730 22:41:09.973" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:41:09.972" endtime="20200730 22:41:16.024"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:00.403" endtime="20200730 12:03:06.557"></status>
+<status status="PASS" starttime="20200730 22:41:09.971" endtime="20200730 22:41:16.025"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:45.229" endtime="20200730 12:03:06.557"></status>
+<status status="PASS" starttime="20200730 22:40:55.064" endtime="20200730 22:41:16.025"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -746,24 +745,24 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:08.575" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:03:06.557" endtime="20200730 12:03:08.575"></status>
+<msg timestamp="20200730 22:41:18.052" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:41:16.027" endtime="20200730 22:41:18.052"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:06.557" endtime="20200730 12:03:08.575"></status>
+<status status="PASS" starttime="20200730 22:41:16.026" endtime="20200730 22:41:18.053"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:03:18.576" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:03:08.575" endtime="20200730 12:03:18.576"></status>
+<msg timestamp="20200730 22:41:28.054" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:41:18.053" endtime="20200730 22:41:28.054"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:45.229" endtime="20200730 12:03:18.577"></status>
+<status status="PASS" starttime="20200730 22:40:55.062" endtime="20200730 22:41:28.055"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:02:45.228" endtime="20200730 12:03:18.578" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:40:55.060" endtime="20200730 22:41:28.057" critical="yes"></status>
 </test>
-<test id="s1-s1-t7" name="Login user with email as test002_automation_2020@test.com and password as ">
+<test id="s1-t7" name="Login user with email as test002_automation_2020@test.com and password as ">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -781,7 +780,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 12:03:18.587" endtime="20200730 12:03:18.587"></status>
+<status status="PASS" starttime="20200730 22:41:28.067" endtime="20200730 22:41:28.067"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -789,10 +788,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:18.587" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:03:18.587" endtime="20200730 12:03:22.992"></status>
+<msg timestamp="20200730 22:41:28.067" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:41:28.067" endtime="20200730 22:41:33.284"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:18.587" endtime="20200730 12:03:22.992"></status>
+<status status="PASS" starttime="20200730 22:41:28.067" endtime="20200730 22:41:33.285"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -803,18 +802,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:23.998" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:03:22.992" endtime="20200730 12:03:23.998"></status>
+<msg timestamp="20200730 22:41:34.292" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:41:33.286" endtime="20200730 22:41:34.292"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:22.992" endtime="20200730 12:03:23.999"></status>
+<status status="PASS" starttime="20200730 22:41:33.285" endtime="20200730 22:41:34.292"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:03:27.001" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:03:23.999" endtime="20200730 12:03:27.001"></status>
+<msg timestamp="20200730 22:41:37.293" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:41:34.292" endtime="20200730 22:41:37.293"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -826,10 +825,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:27.002" level="INFO">Typing text 'test002_automation_2020@test.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:03:27.001" endtime="20200730 12:03:30.180"></status>
+<msg timestamp="20200730 22:41:37.296" level="INFO">Typing text 'test002_automation_2020@test.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:41:37.295" endtime="20200730 22:41:40.482"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:27.001" endtime="20200730 12:03:30.181"></status>
+<status status="PASS" starttime="20200730 22:41:37.294" endtime="20200730 22:41:40.483"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -841,10 +840,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:30.183" level="INFO">Typing text '' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:03:30.182" endtime="20200730 12:03:33.282"></status>
+<msg timestamp="20200730 22:41:40.486" level="INFO">Typing text '' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:41:40.485" endtime="20200730 22:41:43.582"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:30.181" endtime="20200730 12:03:33.283"></status>
+<status status="PASS" starttime="20200730 22:41:40.483" endtime="20200730 22:41:43.583"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -852,12 +851,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:33.285" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:03:33.284" endtime="20200730 12:03:39.441"></status>
+<msg timestamp="20200730 22:41:43.585" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:41:43.584" endtime="20200730 22:41:49.815"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:33.283" endtime="20200730 12:03:39.441"></status>
+<status status="PASS" starttime="20200730 22:41:43.583" endtime="20200730 22:41:49.816"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:18.585" endtime="20200730 12:03:39.442"></status>
+<status status="PASS" starttime="20200730 22:41:28.066" endtime="20200730 22:41:49.816"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -868,24 +867,24 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:41.464" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:03:39.444" endtime="20200730 12:03:41.464"></status>
+<msg timestamp="20200730 22:41:51.850" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:41:49.818" endtime="20200730 22:41:51.850"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:39.442" endtime="20200730 12:03:41.465"></status>
+<status status="PASS" starttime="20200730 22:41:49.817" endtime="20200730 22:41:51.851"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:03:51.466" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:03:41.465" endtime="20200730 12:03:51.466"></status>
+<msg timestamp="20200730 22:42:01.854" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:41:51.851" endtime="20200730 22:42:01.854"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:18.584" endtime="20200730 12:03:51.466"></status>
+<status status="PASS" starttime="20200730 22:41:28.064" endtime="20200730 22:42:01.854"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:18.582" endtime="20200730 12:03:51.467" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:41:28.062" endtime="20200730 22:42:01.856" critical="yes"></status>
 </test>
-<test id="s1-s1-t8" name="Login user with email as test003_automation_2020@test.com and password as malta1">
+<test id="s1-t8" name="Login user with email as test003_automation_2020@test.com and password as malta1">
 <kw name="Invalid Login">
 <doc>Login Details is exported from the LoginPageObject</doc>
 <arguments>
@@ -903,7 +902,7 @@
 <arguments>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200730 12:03:51.470" endtime="20200730 12:03:51.471"></status>
+<status status="PASS" starttime="20200730 22:42:01.864" endtime="20200730 22:42:01.865"></status>
 </kw>
 <kw name="Click Sigin Link" library="LoginKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -911,10 +910,10 @@
 <arguments>
 <arg>${Signin_Link}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:51.471" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:03:51.471" endtime="20200730 12:03:56.208"></status>
+<msg timestamp="20200730 22:42:01.867" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
+<status status="PASS" starttime="20200730 22:42:01.866" endtime="20200730 22:42:06.360"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:51.471" endtime="20200730 12:03:56.209"></status>
+<status status="PASS" starttime="20200730 22:42:01.865" endtime="20200730 22:42:06.361"></status>
 </kw>
 <kw name="Verify Page Title" library="LoginKeywords">
 <arguments>
@@ -925,18 +924,18 @@
 <arguments>
 <arg>${PageTitle}</arg>
 </arguments>
-<msg timestamp="20200730 12:03:57.217" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:03:56.211" endtime="20200730 12:03:57.217"></status>
+<msg timestamp="20200730 22:42:07.370" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20200730 22:42:06.363" endtime="20200730 22:42:07.370"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:56.209" endtime="20200730 12:03:57.218"></status>
+<status status="PASS" starttime="20200730 22:42:06.361" endtime="20200730 22:42:07.370"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200730 12:04:00.220" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:03:57.218" endtime="20200730 12:04:00.220"></status>
+<msg timestamp="20200730 22:42:10.372" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 22:42:07.371" endtime="20200730 22:42:10.372"></status>
 </kw>
 <kw name="Enter UserEmail" library="LoginKeywords">
 <arguments>
@@ -948,10 +947,10 @@
 <arg>${UserEmailAddress}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200730 12:04:00.221" level="INFO">Typing text 'test003_automation_2020@test.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:04:00.220" endtime="20200730 12:04:03.393"></status>
+<msg timestamp="20200730 22:42:10.374" level="INFO">Typing text 'test003_automation_2020@test.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200730 22:42:10.373" endtime="20200730 22:42:13.541"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:04:00.220" endtime="20200730 12:04:03.394"></status>
+<status status="PASS" starttime="20200730 22:42:10.372" endtime="20200730 22:42:13.542"></status>
 </kw>
 <kw name="Enter UserPassword" library="LoginKeywords">
 <arguments>
@@ -963,10 +962,10 @@
 <arg>${UserPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200730 12:04:03.397" level="INFO">Typing text 'malta1' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:04:03.396" endtime="20200730 12:04:06.491"></status>
+<msg timestamp="20200730 22:42:13.544" level="INFO">Typing text 'malta1' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200730 22:42:13.543" endtime="20200730 22:42:16.677"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:04:03.394" endtime="20200730 12:04:06.492"></status>
+<status status="PASS" starttime="20200730 22:42:13.542" endtime="20200730 22:42:16.678"></status>
 </kw>
 <kw name="Click Signin Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -974,12 +973,12 @@
 <arguments>
 <arg>${SigninButton}</arg>
 </arguments>
-<msg timestamp="20200730 12:04:06.494" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:04:06.493" endtime="20200730 12:04:12.555"></status>
+<msg timestamp="20200730 22:42:16.680" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200730 22:42:16.679" endtime="20200730 22:42:22.793"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:04:06.492" endtime="20200730 12:04:12.556"></status>
+<status status="PASS" starttime="20200730 22:42:16.678" endtime="20200730 22:42:22.793"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:03:51.470" endtime="20200730 12:04:12.556"></status>
+<status status="PASS" starttime="20200730 22:42:01.863" endtime="20200730 22:42:22.793"></status>
 </kw>
 <kw name="Visible Sigin Error Message" library="LoginKeywords">
 <arguments>
@@ -990,469 +989,41 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<msg timestamp="20200730 12:04:14.596" level="INFO">Current page contains text 'There is 1 error'.</msg>
-<status status="PASS" starttime="20200730 12:04:12.558" endtime="20200730 12:04:14.596"></status>
+<msg timestamp="20200730 22:42:24.821" level="INFO">Current page contains text 'There is 1 error'.</msg>
+<status status="PASS" starttime="20200730 22:42:22.795" endtime="20200730 22:42:24.821"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:04:12.557" endtime="20200730 12:04:14.596"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10</arg>
-</arguments>
-<msg timestamp="20200730 12:04:24.596" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:04:14.596" endtime="20200730 12:04:24.596"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:03:51.470" endtime="20200730 12:04:24.597"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:03:51.469" endtime="20200730 12:04:24.599" critical="yes"></status>
-</test>
-<kw name="Close All Browsers Completely" library="Generalkeywords" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200730 12:04:24.608" endtime="20200730 12:04:27.642"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:04:24.607" endtime="20200730 12:04:27.643"></status>
-</kw>
-<status status="PASS" starttime="20200730 11:59:46.947" endtime="20200730 12:04:27.643"></status>
-</suite>
-<suite id="s1-s2" name="ShoppingCartTest" source="D:\AutomationChallengeCode\testcases\ShoppingCartTest.robot">
-<kw name="Open Site Browser" library="Generalkeywords" type="setup">
-<arguments>
-<arg>${SiteUrl.lg}</arg>
-<arg>${Browser}</arg>
-<arg>${Title}</arg>
-</arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
-</arguments>
-<msg timestamp="20200730 12:04:27.691" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20200730 12:04:27.691" endtime="20200730 12:04:35.667"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200730 12:04:35.667" endtime="20200730 12:04:38.787"></status>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<doc>Verifies that the current page title equals ``title``.</doc>
-<arguments>
-<arg>${Title}</arg>
-</arguments>
-<msg timestamp="20200730 12:04:39.795" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200730 12:04:38.787" endtime="20200730 12:04:39.795"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:04:27.690" endtime="20200730 12:04:39.796"></status>
-</kw>
-<test id="s1-s2-t1" name="Shopping Cart Test">
-<kw name="Shopping Cart">
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:04:39.798" endtime="20200730 12:04:39.799"></status>
-</kw>
-<kw name="Search for black dress" library="ShoppingKeywords">
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${InputSearchBox}</arg>
-<arg>black dress</arg>
-</arguments>
-<msg timestamp="20200730 12:04:39.801" level="INFO">Typing text 'black dress' into text field 'name:search_query'.</msg>
-<status status="PASS" starttime="20200730 12:04:39.800" endtime="20200730 12:04:42.944"></status>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks the button identified by ``locator``.</doc>
-<arguments>
-<arg>${ClickSearchButton}</arg>
-</arguments>
-<msg timestamp="20200730 12:04:42.944" level="INFO">Clicking button 'name:submit_search'.</msg>
-<status status="PASS" starttime="20200730 12:04:42.944" endtime="20200730 12:04:49.423"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:04:39.799" endtime="20200730 12:04:49.423"></status>
-</kw>
-<kw name="Add an item" library="ShoppingKeywords">
-<doc>I used implicit wait of 20 seconds because the internet at the area where I am holidaying is slow</doc>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<arguments>
-<arg>20</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:04:49.423" endtime="20200730 12:04:50.426"></status>
-</kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<arguments>
-<arg>xpath://li[1]//div[1]//div[1]//div[1]//a[1]//img[1]</arg>
-</arguments>
-<msg timestamp="20200730 12:04:50.426" level="INFO">Simulating Mouse Over on element 'xpath://li[1]//div[1]//div[1]//div[1]//a[1]//img[1]'.</msg>
-<status status="PASS" starttime="20200730 12:04:50.426" endtime="20200730 12:04:52.728"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath://li[1]//div[1]//div[2]//div[2]//a[1]//span[1]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:04:52.728" endtime="20200730 12:04:54.779"></status>
-</kw>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<arguments>
-<arg>xpath://li[1]//div[1]//div[2]//div[2]//a[1]//span[1]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:04:54.779" endtime="20200730 12:04:57.064"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://li[1]//div[1]//div[2]//div[2]//a[1]//span[1]</arg>
-</arguments>
-<msg timestamp="20200730 12:04:57.064" level="INFO">Clicking element 'xpath://li[1]//div[1]//div[2]//div[2]//a[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200730 12:04:57.064" endtime="20200730 12:04:59.133"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath://span[@class='continue btn btn-default button exclusive-medium']//span[1]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:04:59.133" endtime="20200730 12:05:01.185"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://span[@class='continue btn btn-default button exclusive-medium']//span[1]</arg>
-</arguments>
-<msg timestamp="20200730 12:05:01.186" level="INFO">Clicking element 'xpath://span[@class='continue btn btn-default button exclusive-medium']//span[1]'.</msg>
-<status status="PASS" starttime="20200730 12:05:01.186" endtime="20200730 12:05:03.243"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:04:49.423" endtime="20200730 12:05:03.244"></status>
-</kw>
-<kw name="Add another item" library="ShoppingKeywords">
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<arguments>
-<arg>20</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:03.245" endtime="20200730 12:05:04.248"></status>
-</kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<arguments>
-<arg>xpath://li[2]//div[1]//div[1]//div[1]//a[1]//img[1]</arg>
-</arguments>
-<msg timestamp="20200730 12:05:04.248" level="INFO">Simulating Mouse Over on element 'xpath://li[2]//div[1]//div[1]//div[1]//a[1]//img[1]'.</msg>
-<status status="PASS" starttime="20200730 12:05:04.248" endtime="20200730 12:05:06.550"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath://li[2]//div[1]//div[2]//div[2]//a[1]//span[1]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:06.550" endtime="20200730 12:05:08.597"></status>
-</kw>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<arguments>
-<arg>xpath://li[2]//div[1]//div[2]//div[2]//a[1]//span[1]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:08.597" endtime="20200730 12:05:10.878"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://li[2]//div[1]//div[2]//div[2]//a[1]//span[1]</arg>
-</arguments>
-<msg timestamp="20200730 12:05:10.878" level="INFO">Clicking element 'xpath://li[2]//div[1]//div[2]//div[2]//a[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200730 12:05:10.878" endtime="20200730 12:05:12.935"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:03.244" endtime="20200730 12:05:12.935"></status>
-</kw>
-<kw name="Proceed to checkout Items" library="ShoppingKeywords">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath://span[contains(text(),'Proceed to checkout')]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:12.936" endtime="20200730 12:05:14.959"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://span[contains(text(),'Proceed to checkout')]</arg>
-</arguments>
-<msg timestamp="20200730 12:05:14.959" level="INFO">Clicking element 'xpath://span[contains(text(),'Proceed to checkout')]'.</msg>
-<status status="PASS" starttime="20200730 12:05:14.959" endtime="20200730 12:05:19.421"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:12.935" endtime="20200730 12:05:19.422"></status>
-</kw>
-<kw name="Change quantity of an item" library="ShoppingKeywords">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath://tr[2]//td[5]//div[1]//a[2]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:19.423" endtime="20200730 12:05:21.465"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://tr[2]//td[5]//div[1]//a[2]</arg>
-</arguments>
-<msg timestamp="20200730 12:05:21.465" level="INFO">Clicking element 'xpath://tr[2]//td[5]//div[1]//a[2]'.</msg>
-<status status="PASS" starttime="20200730 12:05:21.465" endtime="20200730 12:05:23.549"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:19.422" endtime="20200730 12:05:23.549"></status>
-</kw>
-<kw name="Remove an item" library="ShoppingKeywords">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath://tr[1]//td[5]//div[1]//a[1]//span[1]//i[1]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:23.549" endtime="20200730 12:05:25.580"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://tr[1]//td[5]//div[1]//a[1]//span[1]//i[1]</arg>
-</arguments>
-<msg timestamp="20200730 12:05:25.580" level="INFO">Clicking element 'xpath://tr[1]//td[5]//div[1]//a[1]//span[1]//i[1]'.</msg>
-<status status="PASS" starttime="20200730 12:05:25.580" endtime="20200730 12:05:27.635"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:23.549" endtime="20200730 12:05:27.636"></status>
-</kw>
-<kw name="Proceed to checkout" library="ShoppingKeywords">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath://html//body//div//div//div//div//div//p//a//span[contains(text(),'Proceed to checkout')]</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:27.638" endtime="20200730 12:05:29.686"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://html//body//div//div//div//div//div//p//a//span[contains(text(),'Proceed to checkout')]</arg>
-</arguments>
-<msg timestamp="20200730 12:05:29.687" level="INFO">Clicking element 'xpath://html//body//div//div//div//div//div//p//a//span[contains(text(),'Proceed to checkout')]'.</msg>
-<status status="PASS" starttime="20200730 12:05:29.687" endtime="20200730 12:05:33.862"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:27.637" endtime="20200730 12:05:33.863"></status>
+<status status="PASS" starttime="20200730 22:42:22.794" endtime="20200730 22:42:24.822"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200730 12:05:43.865" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:05:33.863" endtime="20200730 12:05:43.866"></status>
+<msg timestamp="20200730 22:42:34.823" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200730 22:42:24.822" endtime="20200730 22:42:34.823"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:04:39.797" endtime="20200730 12:05:43.867"></status>
+<status status="PASS" starttime="20200730 22:42:01.861" endtime="20200730 22:42:34.824"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:04:39.796" endtime="20200730 12:05:43.868" critical="yes"></status>
+<status status="PASS" starttime="20200730 22:42:01.859" endtime="20200730 22:42:34.825" critical="yes"></status>
 </test>
 <kw name="Close All Browsers Completely" library="Generalkeywords" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200730 12:05:43.875" endtime="20200730 12:05:46.934"></status>
+<status status="PASS" starttime="20200730 22:42:34.833" endtime="20200730 22:42:37.868"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:05:43.874" endtime="20200730 12:05:46.935"></status>
+<status status="PASS" starttime="20200730 22:42:34.832" endtime="20200730 22:42:37.868"></status>
 </kw>
-<status status="PASS" starttime="20200730 12:04:27.651" endtime="20200730 12:05:46.935"></status>
-</suite>
-<suite id="s1-s3" name="ValidLoginTest" source="D:\AutomationChallengeCode\testcases\ValidLoginTest.robot">
-<kw name="Open Site Browser" library="Generalkeywords" type="setup">
-<arguments>
-<arg>${SiteUrl.lg}</arg>
-<arg>${Browser}</arg>
-<arg>${Title}</arg>
-</arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
-</arguments>
-<msg timestamp="20200730 12:05:46.968" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20200730 12:05:46.968" endtime="20200730 12:05:54.953"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200730 12:05:54.953" endtime="20200730 12:05:58.076"></status>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<doc>Verifies that the current page title equals ``title``.</doc>
-<arguments>
-<arg>${Title}</arg>
-</arguments>
-<msg timestamp="20200730 12:05:59.092" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200730 12:05:58.077" endtime="20200730 12:05:59.092"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:46.967" endtime="20200730 12:05:59.093"></status>
-</kw>
-<test id="s1-s3-t1" name="Login user with email as test_automation_2020@test.com and password as malta">
-<kw name="Valid Login">
-<doc>Login Details is exported from the LoginPageObject</doc>
-<arguments>
-<arg>test_automation_2020@test.com</arg>
-<arg>malta</arg>
-</arguments>
-<kw name="Login Details Object" library="LoginPageObject">
-<arguments>
-<arg>${Email}</arg>
-<arg>${Password}</arg>
-<arg>${LoginPageTitle}</arg>
-</arguments>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<status status="PASS" starttime="20200730 12:05:59.099" endtime="20200730 12:05:59.100"></status>
-</kw>
-<kw name="Click Sigin Link" library="LoginKeywords">
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${Signin_Link}</arg>
-</arguments>
-<msg timestamp="20200730 12:05:59.100" level="INFO">Clicking link 'xpath://a[@class='login']'.</msg>
-<status status="PASS" starttime="20200730 12:05:59.100" endtime="20200730 12:06:04.000"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:59.100" endtime="20200730 12:06:04.000"></status>
-</kw>
-<kw name="Verify Page Title" library="LoginKeywords">
-<arguments>
-<arg>${CurrentPageTitle}</arg>
-</arguments>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<doc>Verifies that the current page title equals ``title``.</doc>
-<arguments>
-<arg>${PageTitle}</arg>
-</arguments>
-<msg timestamp="20200730 12:06:05.007" level="INFO">Page title is 'Login - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:06:04.001" endtime="20200730 12:06:05.007"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:06:04.000" endtime="20200730 12:06:05.007"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>3</arg>
-</arguments>
-<msg timestamp="20200730 12:06:08.009" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200730 12:06:05.007" endtime="20200730 12:06:08.009"></status>
-</kw>
-<kw name="Enter UserEmail" library="LoginKeywords">
-<arguments>
-<arg>${Email}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${UserEmailAddress}</arg>
-<arg>${Email}</arg>
-</arguments>
-<msg timestamp="20200730 12:06:08.011" level="INFO">Typing text 'test_automation_2020@test.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20200730 12:06:08.011" endtime="20200730 12:06:11.197"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:06:08.009" endtime="20200730 12:06:11.198"></status>
-</kw>
-<kw name="Enter UserPassword" library="LoginKeywords">
-<arguments>
-<arg>${Password}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${UserPassword}</arg>
-<arg>${Password}</arg>
-</arguments>
-<msg timestamp="20200730 12:06:11.203" level="INFO">Typing text 'malta' into text field 'name:passwd'.</msg>
-<status status="PASS" starttime="20200730 12:06:11.202" endtime="20200730 12:06:14.329"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:06:11.199" endtime="20200730 12:06:14.329"></status>
-</kw>
-<kw name="Click Signin Button" library="LoginKeywords">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks the button identified by ``locator``.</doc>
-<arguments>
-<arg>${SigninButton}</arg>
-</arguments>
-<msg timestamp="20200730 12:06:14.331" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20200730 12:06:14.330" endtime="20200730 12:06:21.059"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:06:14.330" endtime="20200730 12:06:21.059"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:59.097" endtime="20200730 12:06:21.059"></status>
-</kw>
-<kw name="Verify Login Is Successfull" library="LoginKeywords">
-<arguments>
-<arg>${UserHomePageTitle}</arg>
-</arguments>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<doc>Verifies that the current page title equals ``title``.</doc>
-<arguments>
-<arg>${TitleIs}</arg>
-</arguments>
-<msg timestamp="20200730 12:06:22.067" level="INFO">Page title is 'My account - My Store'.</msg>
-<status status="PASS" starttime="20200730 12:06:21.060" endtime="20200730 12:06:22.067"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:06:21.060" endtime="20200730 12:06:22.068"></status>
-</kw>
-<kw name="Verify Page Contains" library="LoginKeywords">
-<arguments>
-<arg>${PageContains}</arg>
-</arguments>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<doc>Verifies that current page contains ``text``.</doc>
-<arguments>
-<arg>${ShouldContain}</arg>
-</arguments>
-<msg timestamp="20200730 12:06:24.096" level="INFO">Current page contains text 'Welcome to your account'.</msg>
-<status status="PASS" starttime="20200730 12:06:22.069" endtime="20200730 12:06:24.096"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:06:22.068" endtime="20200730 12:06:24.097"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10</arg>
-</arguments>
-<msg timestamp="20200730 12:06:34.099" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200730 12:06:24.097" endtime="20200730 12:06:34.099"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:59.096" endtime="20200730 12:06:34.100"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:59.093" endtime="20200730 12:06:34.102" critical="yes"></status>
-</test>
-<kw name="Close All Browsers Completely" library="Generalkeywords" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200730 12:06:34.108" endtime="20200730 12:06:37.148"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:06:34.107" endtime="20200730 12:06:37.148"></status>
-</kw>
-<status status="PASS" starttime="20200730 12:05:46.940" endtime="20200730 12:06:37.148"></status>
-</suite>
-<status status="PASS" starttime="20200730 11:59:46.917" endtime="20200730 12:06:37.153"></status>
+<status status="PASS" starttime="20200730 22:37:58.921" endtime="20200730 22:42:37.868"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="10" fail="0">Critical Tests</stat>
-<stat pass="10" fail="0">All Tests</stat>
+<stat pass="8" fail="0">Critical Tests</stat>
+<stat pass="8" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="10" fail="0" id="s1" name="Testcases">Testcases</stat>
-<stat pass="8" fail="0" id="s1-s1" name="InvalidLoginTest">Testcases.InvalidLoginTest</stat>
-<stat pass="1" fail="0" id="s1-s2" name="ShoppingCartTest">Testcases.ShoppingCartTest</stat>
-<stat pass="1" fail="0" id="s1-s3" name="ValidLoginTest">Testcases.ValidLoginTest</stat>
+<stat pass="8" fail="0" id="s1" name="Invalidlogintest">Invalidlogintest</stat>
 </suite>
 </statistics>
 <errors>

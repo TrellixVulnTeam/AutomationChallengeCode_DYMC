@@ -43,9 +43,6 @@
 
 # To run the test
 	# This test uses external test data in an excel sheet which is located in the TestData folder
-	# ...In the validlogintest.robot and invalidlogintest.robot files present in the TestCases folder
-	# ...change the file path (i.e D:/AutomationChallengeCode/TestData/ValidLoginCredentials.xlsx) to 
-	# ...to point to the file path in the TestData folder on your machine in both cases.
 	# There are three test files to run, namely invalidlogintest.robot, validtest.robot and shoppingcarttest.robot
 	# From the command prompt pointing to the directory of the project run the following:
 		# To run all test files, use -> robot testcases\

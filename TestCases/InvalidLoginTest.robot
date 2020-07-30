@@ -5,7 +5,7 @@ Resource    ../PageObject/LoginPageObject.robot
 Resource    ../Variables/Variables.robot
 Resource    ../Resources/Generalkeywords.robot
 Library     DataDriver
-...     file=D:/AutomationChallengeCode/TestData/InValidLoginCredentials.xlsx
+...     file=../../AutomationChallengeCode/TestData/InValidLoginCredentials.xlsx
 ...     dialect=excel
 Suite Setup     Open Site Browser   ${Siteurl.lg}  ${browser}  ${Title}
 Suite Teardown      Close All Browsers Completely
