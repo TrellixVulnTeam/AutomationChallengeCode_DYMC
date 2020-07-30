@@ -14,6 +14,7 @@ Shopping Cart Test
 
 *** Keywords ***
 Shopping Cart
+    [Documentation]  I introduced a timer speed of 1 second so that each action can be viewed
     set selenium speed  1
     Search for black dress
     Add an item
@@ -22,8 +23,6 @@ Shopping Cart
     Change quantity of an item
     Remove an item
     Proceed to checkout
-# Included a sleep timer below in order to allow the window to wait so that page can be seen before closing
-    sleep  10
 
 
 

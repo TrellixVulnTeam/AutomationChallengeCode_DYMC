@@ -26,9 +26,9 @@ Login user with email as ${Email} and password as ${Password}
 Valid Login
     [Arguments]                     ${Email}    ${Password}
     [Documentation]                 Login Details is exported from the LoginPageObject
+# For the purpose of this challenge test, I introduced a timer of 1 second
+#   set selenium speed              1
     Login Details Object            ${Email}    ${Password}     ${LoginPageTitle}
     Verify Login Is Successfull     ${UserHomePageTitle}
     verify page contains            ${PageContains}
-# Included a sleep timer below in order to allow the window to wait so that page can be seen before closing
-    sleep  10
 

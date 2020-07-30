@@ -10,7 +10,7 @@ Search for black dress
 
 Add an item
     [Documentation]   I used implicit wait of 20 seconds because the internet at the area where I am holidaying is slow
-    Set Selenium Implicit Wait  20
+#   Set Selenium Implicit Wait  20
     Mouse Over                                 xpath://li[1]//div[1]//div[1]//div[1]//a[1]//img[1]
     Wait Until Element Is Visible              xpath://li[1]//div[1]//div[2]//div[2]//a[1]//span[1]
     Scroll Element Into View                   xpath://li[1]//div[1]//div[2]//div[2]//a[1]//span[1]
@@ -19,7 +19,7 @@ Add an item
     Click Element                              xpath://span[@class='continue btn btn-default button exclusive-medium']//span[1]
 
 Add another item
-    Set Selenium Implicit Wait  20
+#   Set Selenium Implicit Wait  20
     Mouse Over                                 xpath://li[2]//div[1]//div[1]//div[1]//a[1]//img[1]
     Wait Until Element Is Visible              xpath://li[2]//div[1]//div[2]//div[2]//a[1]//span[1]
     Scroll Element Into View                   xpath://li[2]//div[1]//div[2]//div[2]//a[1]//span[1]
