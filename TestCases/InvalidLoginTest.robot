@@ -27,6 +27,8 @@ Invalid Login
     [Documentation]                 Login Details is exported from the LoginPageObject
     Login Details Object            ${Email}    ${Password}     ${LoginPageTitle}
     visible sigin error message     ${Error Message}
+# Included a sleep timer below in order to allow the window to wait so that page can be seen before closing
+    sleep  10
 
 
 # pip install robotframework-exceldatadriver

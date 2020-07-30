@@ -22,6 +22,8 @@ Shopping Cart
     Change quantity of an item
     Remove an item
     Proceed to checkout
+# Included a sleep timer below in order to allow the window to wait so that page can be seen before closing
+    sleep  10
 
 
 

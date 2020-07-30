@@ -29,4 +29,6 @@ Valid Login
     Login Details Object            ${Email}    ${Password}     ${LoginPageTitle}
     Verify Login Is Successfull     ${UserHomePageTitle}
     verify page contains            ${PageContains}
+# Included a sleep timer below in order to allow the window to wait so that page can be seen before closing
+    sleep  10
 

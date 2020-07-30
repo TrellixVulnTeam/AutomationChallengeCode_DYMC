@@ -1,8 +1,11 @@
 # AutomationChallengeCode
 
+# Introduction
+	# This automation test uses Robotframework
+	# The following guidelines should be followed and libraries installed in order to run the test
+
 # To pull project from git
-	# Pull the project file from git using: git clone https://github.com/pathfindertimothy/AutomationChallengeCode.git
-	
+	# Pull the project file from git using: git clone https://github.com/pathfindertimothy/AutomationChallengeCode.git	
 
 # Installation
 	# Download and install python (version used 3.8.3) for the appropriate OS (appropriate system)from https://www.python.org/downloads
@@ -14,12 +17,14 @@
 	# Install Robotframework Selenium Library using (the command prompt) -> pip install robotframework-seleniumlibrary
 	
 	# The below excel libraries are needed in order to use the test data in the excel file
-	# Through the command prompt, install -> pip install robotframework-exceldatadriver
-	# Through the command prompt, install -> pip install -U robotframework-datadriver[XLS]
-	# Through the command prompt, install -> pip install xlrd - needed in order to use excel for the data
-	# Through the command prompt, install (needed dependency for excel file) -> pip install numpy
-	# Through the command prompt, install (needed dependency for excel file) -> pip install pandas
-	# This is only needed if using Pycharm IDE to install the libraries above from line 17 - 21 in Pycharm IDE
+	# From the command prompt, install -> pip install robotframework-exceldatadriver
+	# From the command prompt, install -> pip install -U robotframework-datadriver[XLS]
+	# From the command prompt, install -> pip install xlrd - needed in order to use excel for the data
+	# From the command prompt, install (needed dependency for excel file) -> pip install numpy
+	# From the command prompt, install (needed dependency for excel file) -> pip install pandas
+	# From the command prompt, check if the above libraries are installed using -> pip list
+	# If the libraries are not present in pip list, install the libraries again
+	# This step is only needed if using Pycharm IDE to install the libraries above from line 17 - 21 in Pycharm IDE
 		# Open the project in Pycharm IDE
 		# Highlight the project directory (AutomationChallengeCode)
 		# Go to File -> Setting -> Project: AutomationChallengeCode -> Project Interpreter
@@ -33,7 +38,11 @@
 		
 
 # To run the test
-	# There are three test files to run namely, invalidlogintest.robot, validtest.robot and shoppingcarttest.robot
+	# This test uses external test data in an excel sheet which is located in the TestData folder
+	# ...In the validlogintest.robot and invalidlogintest.robot files present in the TestCases folder
+	# ...change the file path (i.e D:/AutomationChallengeCode/TestData/ValidLoginCredentials.xlsx) to 
+	# ...to point to the file path in the TestData folder on your machine in both cases.
+	# There are three test files to run, namely invalidlogintest.robot, validtest.robot and shoppingcarttest.robot
 	# From the command prompt pointing to the directory of the project run the following:
 		# To run all test files, use -> robot testcases\
 		# or -> robot testcases\*.robot
