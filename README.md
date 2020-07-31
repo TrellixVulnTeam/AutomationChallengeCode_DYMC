@@ -56,3 +56,7 @@
 		
 # Documentation
 	# See the Documentation folder for assumption taken in respect of the testcases
+
+# Reports and Logs
+	# Test cases reports can be viewed by opening the report.html file in the project root directory
+	# Test cases logs can be viewed by opening the log.html file in the project root directory
